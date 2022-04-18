@@ -1,7 +1,9 @@
 import shutil
 
+project_path = 'C:/Users/Jacob/Desktop/Coding/Python/WiFi-Logger/'
+
 
 def move(file_name):
-    src = f"C:/Users/Jacob/Desktop/Coding/Python/WiFi-Logger/{file_name}"
-    dst = "C:/Users/Jacob/Desktop/Coding/Python/WiFi-Logger/Saved"
+    src = f"{project_path}{file_name}"
+    dst = f"{project_path}Saved"
     shutil.copy(src, dst)
